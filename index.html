@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme-toggle.js" defer></script>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="header-text">
+        <h1 class="primary-heading">
+          Social Media Dashboard
+          <span class="header-subtitle">Total Followers: 23,004</span>
+        </h1>
+      </div>
+      <button
+        class="toggle-btn"
+        id="toggle-theme"
+        type="button"
+        title="Toggles light & dark theme"
+        aria-label="auto"
+        aria-live="polite"
+      >
+        Dark Mode
+        <span class="toggle-display" hidden></span>
+      </button>
+    </header>
+
+    <main class="wrapper">
+      <section class="cards">
+        <div class="card grid-flow" data-social-media="facebook">
+          <div class="card-platform flex-group">
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+            <p class="card-username">@nathanf</p>
+          </div>
+          <p class="card-count">
+            1987<span class="card-followers">Followers</span>
+          </p>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">12 Today</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card grid-flow" data-social-media="twitter">
+          <div class="card-platform flex-group">
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+            <p class="card-username">@nathanf</p>
+          </div>
+          <p class="card-count">
+            1044<span class="card-followers">Followers</span>
+          </p>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">99 Today</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card grid-flow" data-social-media="instagram">
+          <div class="card-platform flex-group">
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+            <p class="card-username">@realnathanf</p>
+          </div>
+          <p class="card-count">
+            11k<span class="card-followers">Followers</span>
+          </p>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">1099 Today</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card grid-flow" data-social-media="youtube">
+          <div class="card-platform flex-group">
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+            <p class="card-username">Nathan F</p>
+          </div>
+          <p class="card-count">
+            8239<span class="card-followers">Subscribers</span>
+          </p>
+          <div class="card-change flex-group">
+            <img src="images/icon-down.svg" alt="down arrow" />
+            <p class="card-number" data-arrow="down">144 Today</p>
+          </div>
+        </div>
+        <!-- end card -->
+      </section>
+
+      <h2 class="secondary-heading mb-4">Overview - Today</h2>
+      <section class="cards">
+        <div class="card overview">
+          <p class="card-subtitle">Page Views</p>
+          <img src="images/icon-facebook.svg" alt="Facebook" />
+          <p class="card-count">87</p>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">3%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <p class="card-subtitle">Likes</p>
+          <img src="images/icon-facebook.svg" alt="Facebook" />
+          <div class="card-count">52</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-down.svg" alt="down arrow" />
+            <p class="card-number" data-arrow="down">2%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Likes</div>
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+          <div class="card-count">5462</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">2257%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Profile Views</div>
+          <img src="images/icon-instagram.svg" alt="Instagram" />
+          <div class="card-count">52k</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">1375%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Retweets</div>
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+          <div class="card-count">117</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">303%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Likes</div>
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+          <div class="card-count">507</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-up.svg" alt="up arrow" />
+            <p class="card-number" data-arrow="up">553%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Likes</div>
+          <img src="images/icon-youtube.svg" alt="YouTube" />
+          <div class="card-count">107</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-down.svg" alt="down arrow" />
+            <p class="card-number" data-arrow="down">19%</p>
+          </div>
+        </div>
+        <!-- end card -->
+        <div class="card overview">
+          <div class="card-subtitle">Total Views</div>
+          <img src="images/icon-youtube.svg" alt="YouTube" />
+          <div class="card-count">1407</div>
+          <div class="card-change flex-group">
+            <img src="images/icon-down.svg" alt="down arrow" />
+            <p class="card-number" data-arrow="down">12%</p>
+          </div>
+        </div>
+        <!-- end card -->
+      </section>
+    </main>
+  </body>
+</html>
